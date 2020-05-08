@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h> //necessário para usar as funções malloc() e free()
+#include <stdlib.h> //necessï¿½rio para usar as funï¿½ï¿½es malloc() e free()
 #include <conio.h>
 
-
+// ola sou so um teste bonito
 int main(void)
 {
   float *v; //definindo o ponteiro v
@@ -11,23 +11,23 @@ int main(void)
   printf("Informe o numero de componentes do vetor: ");
   scanf("%d", &num_componentes);
   
-  /* ------------- Alocando dinamicamente o espaço necessário -------------
+  /* ------------- Alocando dinamicamente o espaï¿½o necessï¿½rio -------------
   
-  1 - Calcular o número de bytes necessários
-  primeiramente multiplicamos o número de componentes do vetor pela
-  quantidade de bytes que é dada pelo comando sizeof,
+  1 - Calcular o nï¿½mero de bytes necessï¿½rios
+  primeiramente multiplicamos o nï¿½mero de componentes do vetor pela
+  quantidade de bytes que ï¿½ dada pelo comando sizeof,
   portanto temos:
   num_componentes * sizeof(float)
   
-  2 - Reservar a quantidade de memória
-  usamos malloc para reservar essa quantidade de memória,
-  então temos:
+  2 - Reservar a quantidade de memï¿½ria
+  usamos malloc para reservar essa quantidade de memï¿½ria,
+  entï¿½o temos:
   malloc(num_componentes * sizeof(float))
   
   3 - Converter o ponteiro para o tipo de dados desejado
-  como a função malloc retorna um ponteiro do tipo void,
-  precisamos converter esse ponteiro para o tipo da nossa variável, no caso float,
-  por isso usamos o comando de conversão explicita:
+  como a funï¿½ï¿½o malloc retorna um ponteiro do tipo void,
+  precisamos converter esse ponteiro para o tipo da nossa variï¿½vel, no caso float,
+  por isso usamos o comando de conversï¿½o explicita:
   (float *)
   
   4 - juntando tudo e atribuindo em v temos o comando abaixo: */
@@ -49,7 +49,7 @@ int main(void)
     printf("%.2f\n",v[i]);
   }
   
-  //liberando o espaço de memória alocado
+  //liberando o espaï¿½o de memï¿½ria alocado
   free(v);
   
   getch();
